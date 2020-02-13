@@ -25,9 +25,14 @@ public class HomeController {
 		return "bevezetes";
 	}
 	
-	@RequestMapping("/sapbusinessuite")
+	@RequestMapping("/sapbusinesssuite")
 	public String sapbusinesssuite(Model model) {			
-		return "sapbusinessuite";
+		return "sapbusinesssuite";
+	}
+	
+	@RequestMapping("/sapmodulok")
+	public String sapmodulok(Model model) {			
+		return "sapmodulok";
 	}
 	
 	@RequestMapping("/{title}")
