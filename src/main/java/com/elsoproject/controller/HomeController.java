@@ -35,6 +35,11 @@ public class HomeController {
 		return "sapmodulok";
 	}
 	
+	@RequestMapping("/bestsapmodul")
+	public String bestsapmodul(Model model) {			
+		return "bestsapmodul";
+	}
+	
 	@RequestMapping("/{title}")
 	public String searchForUser(@PathVariable(value = "title") String title, Model model) throws Exception {
 		if (title == null)
