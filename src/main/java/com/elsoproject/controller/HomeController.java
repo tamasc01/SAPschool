@@ -40,6 +40,11 @@ public class HomeController {
 		return "bestsapmodul";
 	}
 	
+	@RequestMapping("/saptanacsado")
+	public String saptanacsado(Model model) {			
+		return "saptanacsado";
+	}
+	
 	@RequestMapping("/{title}")
 	public String searchForUser(@PathVariable(value = "title") String title, Model model) throws Exception {
 		if (title == null)
