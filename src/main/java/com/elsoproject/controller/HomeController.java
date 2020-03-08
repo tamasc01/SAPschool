@@ -50,6 +50,11 @@ public class HomeController {
 		return "saptanusitvany";
 	}
 	
+	@RequestMapping("/saplogon")
+	public String saplogon(Model model) {			
+		return "saplogon";
+	}
+	
 	@RequestMapping("/{title}")
 	public String searchForUser(@PathVariable(value = "title") String title, Model model) throws Exception {
 		if (title == null)
