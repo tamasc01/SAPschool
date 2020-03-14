@@ -55,6 +55,11 @@ public class HomeController {
 		return "saplogon";
 	}
 	
+	@RequestMapping("/quiz")
+	public String quiz(Model model) {			
+		return "quiz";
+	}
+	
 	@RequestMapping("/{title}")
 	public String searchForUser(@PathVariable(value = "title") String title, Model model) throws Exception {
 		if (title == null)

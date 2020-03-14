@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang=en-GB dir=ltr>
+
+<head>
+    <meta name=viewport content="width=device-width, initial-scale=1.0">
+    <meta http-equiv=X-UA-Compatible content="IE=edge" />
+    <meta charset=utf-8 />
+    <meta name=keywords content="sap, course, beginner, free, the" />
+    <meta name=description content="SAP basic tutorial for beginners. ... SAP has the largest market share of all ERP systems &amp; commands an unparalleled premium in the ERP &amp; IT market." />
+    <meta name=theme-color content=#2cbaff />
+
+    <title>SAP Quize</title>
+
+    <link rel=stylesheet href="css/quiz_style.css" />
+
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <div class="pull-left">SAP Quiz</div>
+            <div class="pull-right"><a href="/">instruktor.hu</a></div>
+        </header>
+
+        <main>
+            <form class="questionForm" id="q1" data-question="1">
+                <h3>1. Melyik SAP adatbázis a következők közül? </h3>
+                <ul>
+                    <li>
+                        <input name="q1" type="radio" value="a" />ANAA</li>
+                    <li>
+                        <input name="q1" type="radio" value="b" />HAAN</li>
+                    <li>
+                        <input name="q1" type="radio" value="c" />HANA</li>
+                    <li>
+                        <input name="q1" type="radio" value="d" />HAHA</li>
+                </ul>
+                <button id="submit">Beküldés</button>
+            </form>
+
+            <form class="questionForm" id="q2" data-question="1">
+                <h3>2. Hány SAP modul létezik</h3>
+                <ul>
+                    <li>
+                        <input name="q2" type="radio" value="a" />1</li>
+                    <li>
+                        <input name="q2" type="radio" value="b" />2-5</li>
+                    <li>
+                        <input name="q2" type="radio" value="c" />6-10</li>
+                    <li>
+                        <input name="q2" type="radio" value="d" />Több mint 10</li>
+                </ul>
+                <button id="submit">Beküldés</button>
+            </form>
+
+            <form class="questionForm" id="q3" data-question="1">
+                <h3>3. Az SAP </h3>
+                <ul>
+                    <li>
+                        <input name="q3" type="radio" value="a" />egy operációs rendszer.</li>
+                    <li>
+                        <input name="q3" type="radio" value="b" />Web Server.</li>
+                    <li>
+                        <input name="q3" type="radio" value="c" />programozási nyelv.</li>
+                    <li>
+                        <input name="q3" type="radio" value="d" />ERP.</li>
+                </ul>
+                <button id="submit">Beküldés</button>
+            </form>
+
+            <div id="results"></div>
+            <br>
+        </main>
+
+        <footer>
+            <div class="pull-left">Összesen: 3 kérdés</div>
+        </footer>
+
+    </div>
+    <!-- container -->
+
+    <script src="/js/jquery.js"></script>
+    <script src="/js/quiz.js"></script>
+
+</body>
+
+</html>
