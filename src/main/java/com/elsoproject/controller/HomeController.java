@@ -55,6 +55,11 @@ public class HomeController {
 		return "saplogon";
 	}
 	
+	@RequestMapping("/mySAP")
+	public String mySAP(Model model) {			
+		return "mySAP";
+	}
+	
 	@RequestMapping("/quiz")
 	public String quiz(Model model) {			
 		return "quiz";
