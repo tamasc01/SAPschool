@@ -60,6 +60,11 @@ public class HomeController {
 		return "mySAP";
 	}
 	
+	@RequestMapping("/netweaver")
+	public String netweaver(Model model) {			
+		return "netweaver";
+	}
+	
 	@RequestMapping("/quiz")
 	public String quiz(Model model) {			
 		return "quiz";
