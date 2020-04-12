@@ -1,5 +1,5 @@
 var score = 0; //Set score to 0
-var total = 3; //Total number of questions
+var total = 5; //Total number of questions
 var point = 1; //Points per correct answer
 var highest = total * point;
 
@@ -8,7 +8,9 @@ function init(){
 	// set correct answers
 	sessionStorage.setItem('a1','c');
 	sessionStorage.setItem('a2','d');
-	sessionStorage.setItem('a3','d');
+	sessionStorage.setItem('a3','a');
+	sessionStorage.setItem('a4','b');
+	sessionStorage.setItem('a5','d');
 }
 
 
@@ -35,6 +37,20 @@ $('#q2 #submit').click(function(){
 $('#q3 #submit').click(function(){
 	$('.questionForm').hide();
 	process('q3');
+	$('#q4').fadeIn(300);
+	return false;
+});
+
+$('#q4 #submit').click(function(){
+	$('.questionForm').hide();
+	process('q4');
+	$('#q5').fadeIn(300);
+	return false;
+});
+
+$('#q5 #submit').click(function(){
+	$('.questionForm').hide();
+	process('q5');
 	$('#results').fadeIn(300);
 	return false;
 });
@@ -60,7 +76,21 @@ function process(q){
 		if(submitted == sessionStorage.a3){
 			score++;
 		}
-		$('#results').html('<h3>Elért pontok száma: '+score+' a maximum 3-ból.</h3><a href="quiz">Teszt újra kitöltése!</a>');
+	}	
+	
+	if(q == "q4"){
+		var submitted = $('input[name=q4]:checked').val();
+		if(submitted == sessionStorage.a4){
+			score++;
+		}
+	}	
+		
+	if(q == "q5"){
+		var submitted = $('input[name=q5]:checked').val();
+		if(submitted == sessionStorage.a5){
+			score++;
+		}
+		$('#results').html('<h3>Elért pontok száma: '+score+' a maximum 5-ből.</h3><a href="quiz">Teszt újra kitöltése!</a>');
 	}
 	return false;
 
