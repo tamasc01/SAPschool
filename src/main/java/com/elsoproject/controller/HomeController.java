@@ -65,6 +65,11 @@ public class HomeController {
 		return "netweaver";
 	}
 	
+	@RequestMapping("/technikainev")
+	public String technikainev(Model model) {			
+		return "technikainev";
+	}
+	
 	@RequestMapping("/quiz")
 	public String quiz(Model model) {			
 		return "quiz";
