@@ -70,6 +70,11 @@ public class HomeController {
 		return "technikainev";
 	}
 	
+	@RequestMapping("/sapmolga")
+	public String sapmolga(Model model) {			
+		return "sapmolga";
+	}
+	
 	@RequestMapping("/quiz")
 	public String quiz(Model model) {			
 		return "quiz";

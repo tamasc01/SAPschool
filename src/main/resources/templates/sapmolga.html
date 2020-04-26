@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang=en-GB dir=ltr>
+
+<head>
+    <meta name=viewport content="width=device-width, initial-scale=1.0">
+    <meta http-equiv=X-UA-Compatible content="IE=edge" />
+    <meta charset=utf-8 />
+    <meta name=keywords content="sap, course, beginner, free, the" />
+    <meta name=description content="SAP basic tutorial for beginners. ... SAP has the largest market share of all ERP systems &amp; commands an unparalleled premium in the ERP &amp; IT market." />
+    <meta name=theme-color content=#2cbaff />
+
+    <title>SAPMolga</title>
+
+    <link rel=stylesheet href="/css/main.css" />
+</head>
+
+<body class="gantry site com_content view-article no-layout no-task dir-ltr itemid-1629 outline-9 g-offcanvas-left g-default g-style-preset4">
+    <div id=g-page-surround>
+
+        <section id=g-navigation class=g-default-navigation>
+            <div class=g-grid>
+                <div class="g-block size-100">
+                    <div id=logo-8099-particle class="g-content g-particle">
+                        <a href="/" title=Instruktor aria-label=Instruktor rel=home class=g-logo><font color=#235AD7 size ="16"><b>I</b></font><font color=#235AD7 size ="6">nstruktor</font></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id=g-container-main class=g-wrapper>
+            <div class=g-grid>
+                <div class="g-block size-100">
+
+                    <div class=g-grid>
+                        <div class="g-block size-100">
+                            <div class=g-content>
+                                <div class="platform-content row-fluid">
+                                    <div class=span12>
+                                        <div class=item-page>
+
+                                            <div class=page-header>
+                                                <h1> SAP Molga lista </h1></div>
+
+                                            <div>
+                                                <p> Az országspecifikus tranzakciók futtatásakor meg kell ismernünk az ország Molgáját.
+                                                    <p> Például a bérszámfejtés tranzakciója a PC00_M<strong>XX</strong>_Calc , ahol <strong>XX </strong>= Ország Molga.
+                                                        <p> Most, Oroszország számára a bérszámfejtés tranzakciója(Molga = 33 ) PC00_M<strong>33</strong>_Calc lesz. Spanyolország esetében(Molga = 04 ) PC00_M<strong>04</strong>_Calc.
+                                                            <p> A MOLGA országot a <strong>T500L</strong> táblázat segítségével láthatja.
+                                                                <p> Molga (országkódok) és ISO-kódok listája minden ország számára, ahol SAP működik:
+                                                                    <table border=1>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> <strong>Molga</strong></td>
+                                                                                <td valign=bottom width=64> <strong>ISO code</strong></td>
+                                                                                <td valign=bottom width=96> <strong>Country</strong></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 1</td>
+                                                                                <td valign=bottom width=64> DE</td>
+                                                                                <td valign=bottom width=96> Germany</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 2</td>
+                                                                                <td valign=bottom width=64> CH</td>
+                                                                                <td valign=bottom width=96> Switzerland</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 3</td>
+                                                                                <td valign=bottom width=64> AT</td>
+                                                                                <td valign=bottom width=96> Austria</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 4</td>
+                                                                                <td valign=bottom width=64> ES</td>
+                                                                                <td valign=bottom width=96> Spain</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 5</td>
+                                                                                <td valign=bottom width=64> NL</td>
+                                                                                <td valign=bottom width=96> Netherlands</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 6</td>
+                                                                                <td valign=bottom width=64> FR</td>
+                                                                                <td valign=bottom width=96> France</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 7</td>
+                                                                                <td valign=bottom width=64> CA</td>
+                                                                                <td valign=bottom width=96> Canada</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 8</td>
+                                                                                <td valign=bottom width=64> GB</td>
+                                                                                <td valign=bottom width=96> Great Britain</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 9</td>
+                                                                                <td valign=bottom width=64> DK</td>
+                                                                                <td valign=bottom width=96> Denmark</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 10</td>
+                                                                                <td valign=bottom width=64> US</td>
+                                                                                <td valign=bottom width=96> USA</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 11</td>
+                                                                                <td valign=bottom width=64> IE</td>
+                                                                                <td valign=bottom width=96> Ireland</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 12</td>
+                                                                                <td valign=bottom width=64> BE</td>
+                                                                                <td valign=bottom width=96> Belgium</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 13</td>
+                                                                                <td valign=bottom width=64> AU</td>
+                                                                                <td valign=bottom width=96> Australia</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 14</td>
+                                                                                <td valign=bottom width=64> MY</td>
+                                                                                <td valign=bottom width=96> Malaysia</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 15</td>
+                                                                                <td valign=bottom width=64> IT</td>
+                                                                                <td valign=bottom width=96> Italy</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 16</td>
+                                                                                <td valign=bottom width=64> ZA</td>
+                                                                                <td valign=bottom width=96> South Africa</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 17</td>
+                                                                                <td valign=bottom width=64> VE</td>
+                                                                                <td valign=bottom width=96> Venezuela</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 18</td>
+                                                                                <td valign=bottom width=64> CZ</td>
+                                                                                <td valign=bottom width=96> Czech Republic</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 19</td>
+                                                                                <td valign=bottom width=64> PT</td>
+                                                                                <td valign=bottom width=96> Portugal</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 20</td>
+                                                                                <td valign=bottom width=64> NO</td>
+                                                                                <td valign=bottom width=96> Norway</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 21</td>
+                                                                                <td valign=bottom width=64> HU</td>
+                                                                                <td valign=bottom width=96> Hungary</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 22</td>
+                                                                                <td valign=bottom width=64> JP</td>
+                                                                                <td valign=bottom width=96> Japan</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 23</td>
+                                                                                <td valign=bottom width=64> SE</td>
+                                                                                <td valign=bottom width=96> Sweden</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 24</td>
+                                                                                <td valign=bottom width=64> SA</td>
+                                                                                <td valign=bottom width=96> Saudi Arabia</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 25</td>
+                                                                                <td valign=bottom width=64> SG</td>
+                                                                                <td valign=bottom width=96> Singapore</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 26</td>
+                                                                                <td valign=bottom width=64> TH</td>
+                                                                                <td valign=bottom width=96> Thailand</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 27</td>
+                                                                                <td valign=bottom width=64> HK</td>
+                                                                                <td valign=bottom width=96> Hong Kong</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 28</td>
+                                                                                <td valign=bottom width=64> CN</td>
+                                                                                <td valign=bottom width=96> China</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 29</td>
+                                                                                <td valign=bottom width=64> AR</td>
+                                                                                <td valign=bottom width=96> Argentina</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 30</td>
+                                                                                <td valign=bottom width=64> LU</td>
+                                                                                <td valign=bottom width=96> Luxembourg</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 31</td>
+                                                                                <td valign=bottom width=64> SK</td>
+                                                                                <td valign=bottom width=96> Slovakia</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 32</td>
+                                                                                <td valign=bottom width=64> MX</td>
+                                                                                <td valign=bottom width=96> Mexico</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 33</td>
+                                                                                <td valign=bottom width=64> RU</td>
+                                                                                <td valign=bottom width=96> Russia</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 34</td>
+                                                                                <td valign=bottom width=64> ID</td>
+                                                                                <td valign=bottom width=96> Indonesia</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 35</td>
+                                                                                <td valign=bottom width=64> BN</td>
+                                                                                <td valign=bottom width=96> Brunei</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 36</td>
+                                                                                <td valign=bottom width=64> UA</td>
+                                                                                <td valign=bottom width=96> Ukraine</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 37</td>
+                                                                                <td valign=bottom width=64> BR</td>
+                                                                                <td valign=bottom width=96> Brazil</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 38</td>
+                                                                                <td valign=bottom width=64> CO</td>
+                                                                                <td valign=bottom width=96> Colombia</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 39</td>
+                                                                                <td valign=bottom width=64> CL</td>
+                                                                                <td valign=bottom width=96> Chile</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 40</td>
+                                                                                <td valign=bottom width=64> IN</td>
+                                                                                <td valign=bottom width=96> India</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 41</td>
+                                                                                <td valign=bottom width=64> KR</td>
+                                                                                <td valign=bottom width=96> South Korea</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 42</td>
+                                                                                <td valign=bottom width=64> TW</td>
+                                                                                <td valign=bottom width=96> Taiwan</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 43</td>
+                                                                                <td valign=bottom width=64> NZ</td>
+                                                                                <td valign=bottom width=96> New Zealand</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 44</td>
+                                                                                <td valign=bottom width=64> FI</td>
+                                                                                <td valign=bottom width=96> Finland</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 45</td>
+                                                                                <td valign=bottom width=64> GR</td>
+                                                                                <td valign=bottom width=96> Greece</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 46</td>
+                                                                                <td valign=bottom width=64> PL</td>
+                                                                                <td valign=bottom width=96> Poland</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 47</td>
+                                                                                <td valign=bottom width=64> TR</td>
+                                                                                <td valign=bottom width=96> Turkey</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 48</td>
+                                                                                <td valign=bottom width=64> PH</td>
+                                                                                <td valign=bottom width=96> Philippines</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 49</td>
+                                                                                <td valign=bottom width=64> NA</td>
+                                                                                <td valign=bottom width=96> Namibia</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 50</td>
+                                                                                <td valign=bottom width=64> LS</td>
+                                                                                <td valign=bottom width=96> Lesotho</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 51</td>
+                                                                                <td valign=bottom width=64> BW</td>
+                                                                                <td valign=bottom width=96> Botswana</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 52</td>
+                                                                                <td valign=bottom width=64> SZ</td>
+                                                                                <td valign=bottom width=96> Swaziland</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 53</td>
+                                                                                <td valign=bottom width=64> MZ</td>
+                                                                                <td valign=bottom width=96> Mosambique</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 54</td>
+                                                                                <td valign=bottom width=64> KE</td>
+                                                                                <td valign=bottom width=96> Kenya</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 55</td>
+                                                                                <td valign=bottom width=64> AO</td>
+                                                                                <td valign=bottom width=96> Angola</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 56</td>
+                                                                                <td valign=bottom width=64> ZW</td>
+                                                                                <td valign=bottom width=96> Zimbabwe</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 57</td>
+                                                                                <td valign=bottom width=64> AN</td>
+                                                                                <td valign=bottom width=96> Dutch Antilles</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 58</td>
+                                                                                <td valign=bottom width=64> HR</td>
+                                                                                <td valign=bottom width=96> Croatia</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 60</td>
+                                                                                <td valign=bottom width=64> IS</td>
+                                                                                <td valign=bottom width=96> Iceland</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 61</td>
+                                                                                <td valign=bottom width=64> RO</td>
+                                                                                <td valign=bottom width=96> Romania</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 62</td>
+                                                                                <td valign=bottom width=64> SI</td>
+                                                                                <td valign=bottom width=96> Slovenia</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign=bottom width=64> 99</td>
+                                                                                <td valign=bottom width=64> 99</td>
+                                                                                <td valign=bottom width=96> Other Countries</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+
+                                            </div>
+                                            <ul class="pager pagenav">
+                                                <li class=previous>
+                                                    <a class=hasTooltip title="Műszaki nevek megjelenítése SAP-ban" aria-label="Previous article: Műszaki nevek megjelenítése SAP-ban" href=/technikainev rel=prev> <span aria-hidden=true>Előző</span> </a>
+                                                </li>
+                                                <a href="/" style="padding:0px;background:#FFF;color:#04b8e6;font-size:15px;">
+                                                    <strong>Kezdőlap</strong>
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer id="g-footer">
+        <div class="g-container">
+            <div class="g-grid">
+                <div class="g-block size-100 align-left">
+                    <div id="branding-9192-particle" class="g-content g-particle">
+                        <div class="g-branding ">
+                            <div class="brackbranding">
+                                <h4><a href="/quiz" style="color:#f8f8f8;">Teszt kitöltése!</a></h4></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
