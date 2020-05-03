@@ -75,6 +75,11 @@ public class HomeController {
 		return "sapmolga";
 	}
 	
+	@RequestMapping("/kerdesek")
+	public String kerdesek(Model model) {			
+		return "kerdesek";
+	}
+	
 	@RequestMapping("/quiz")
 	public String quiz(Model model) {			
 		return "quiz";
