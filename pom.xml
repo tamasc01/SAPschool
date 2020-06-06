@@ -54,6 +54,11 @@
 			<artifactId>spring-boot-starter-webflux</artifactId>
 		</dependency>
 
+		<dependency>
+ 			<groupId>nz.net.ultraq.thymeleaf</groupId>
+ 			<artifactId>thymeleaf-layout-dialect</artifactId>
+ 		</dependency>
+
 	</dependencies>
 
 
@@ -62,14 +67,7 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-			
-	
-        
-
-  
- 
-  
+			</plugin> 
 		</plugins>
 	</build>
 

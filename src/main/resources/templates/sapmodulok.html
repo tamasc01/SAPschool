@@ -1,34 +1,14 @@
 <!DOCTYPE html>
-<html lang=en-GB dir=ltr>
+<html layout:decorator="layouts/main">
 
 <head>
-    <meta name=viewport content="width=device-width, initial-scale=1.0">
-    <meta http-equiv=X-UA-Compatible content="IE=edge" />
-    <meta charset=utf-8 />
-    <meta name=keywords content="sap, course, beginner, free, the" />
-    <meta name=description content="SAP basic tutorial for beginners. ... SAP has the largest market share of all ERP systems &amp; commands an unparalleled premium in the ERP &amp; IT market." />
-    <meta name=theme-color content=#2cbaff />
-
+	<meta charset="utf-8" />
     <title>SAP modulok</title>
-
-    <link rel=stylesheet href="/css/main.css" />
-
 </head>
 
 <body>
 
-    <div id=g-page-surround>
-        <div class="g-offcanvas-hide g-offcanvas-toggle" role=navigation data-offcanvas-toggle aria-controls=g-offcanvas aria-expanded=false><i class="fa fa-fw fa-bars"></i></div>
-
-        <section id=g-navigation class=g-default-navigation>
-            <div class=g-grid>
-                <div class="g-block size-100">
-                    <div id=logo-8099-particle class="g-content g-particle">
-                        <a href="/" title=Instruktor aria-label=Instruktor rel=home class=g-logo><font color=#235AD7 size ="16"><b>I</b></font><font color=#235AD7 size ="6">nstruktor</font></a>
-                    </div>
-                </div>
-            </div>
-        </section>
+<div layout:fragment="AllContent">
 
         <section id=g-container-main class=g-wrapper>
             <div class=g-grid>
@@ -159,22 +139,7 @@
             </div>
         </section>
 
-    </div>
-
-<footer id="g-footer">
-    <div class="g-container">
-        <div class="g-grid">
-            <div class="g-block size-100 align-left">
-                <div id="branding-9192-particle" class="g-content g-particle">
-                    <div class="g-branding ">
-                        <div class="brackbranding">
-                            <h4><a href="/quiz" style="color:#f8f8f8;">Teszt kitöltése!</a></h4></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
+</div>
 
 </body>
 
